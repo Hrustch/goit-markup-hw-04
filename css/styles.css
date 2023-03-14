@@ -3,7 +3,7 @@
 *::before {
     box-sizing: border-box;
 }
-
+li,
 h1,
 h2,
 h3,
@@ -280,9 +280,11 @@ body {
     font-size: 16px;
     color: var(--body_color);
 }
-
+/* HW_4 */
 .hero{
-    background-color: var(--dark_color);
+    background-image: linear-gradient(var(--hero_color), var(--hero_color)), url(../images/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -365,12 +367,70 @@ body {
     color: var(--dark_color);
     text-align: center;
 }
+
+.team_section p{
+    margin-bottom: 8px;
+}
+
 .team_section_ul{
     text-align: center;
     list-style: none;
     display: flex;
     gap: 24px;
 }
+
+/* HW_4 */
+/* Media_links */
+.social_media_lnk{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+/* .social_media_lnk li{
+    max-height: 40px;
+} */
+.social_media_lnk li a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main_color);
+    max-width: 40px;
+    min-width: 40px;
+    max-height: 40px;
+    min-height: 40px;
+    padding: 4px;
+    border-radius: 9999px;
+}
+.social_media_lnk li a:hover{
+    background-color: var(--pressed_color);
+    transition: 0.2s;
+}
+.social_media_lnk li svg{
+    max-width: 16px;
+    max-height: 16px;
+}
+.icon_bg svg {
+    max-width: 64px;
+    max-height: 64px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_bg {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #f4f4fd;
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .team_txt{
     padding-top: 32px;
     padding-bottom: 32px;
