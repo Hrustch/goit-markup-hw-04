@@ -449,6 +449,11 @@ body {
 }
 
 .customers h2 {
+    letter-spacing: 0.02em;
+    line-height: 1.11;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--dark_color);
     margin-bottom: 72px;
 }
 
