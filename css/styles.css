@@ -35,7 +35,7 @@ ul {
     --hero_color: #2e2f42b2;
     --white_color: #ffffff;
     --modal_color: #fcfcfc;
-    --customers_background: #E5E5E5;
+    --customers_background: white;
 }
 
 body {
@@ -147,7 +147,7 @@ body {
 
 
 .filter_button button {
-    background-color: var(--accent_color);
+    background-color: var(--light_color);
     border: 1px solid var(--accent_color);
     border-radius: 4px;
     color: var(--pressed_color);
@@ -294,10 +294,13 @@ body {
 /* HW_4 */
 .hero{
     background-image: linear-gradient(var(--hero_color), var(--hero_color)), url(../images/hero_bg.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .hero_h1 {
@@ -373,7 +376,7 @@ body {
 }
 
 .team_section h2 {
-    margin-bottom: 8px;
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -410,14 +413,11 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--main_color);
-    max-width: 40px;
-    min-width: 40px;
-    max-height: 40px;
-    min-height: 40px;
-    padding: 4px;
+    width: 40px;
+    height: 40px;
     border-radius: 9999px;
 }
-.social_media_lnk li a:hover
+.social_media_lnk li a:hover,
 .social_media_lnk li a:focus{
     background-color: var(--pressed_color);
     transition: 0.2s;
@@ -436,8 +436,9 @@ body {
 }
 
 .icon_bg {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    height: 112px;
+    width: 264px;
+    border-radius: 4px;
     background-color: #f4f4fd;
     display: flex;
     margin-bottom: 8px;
@@ -484,7 +485,7 @@ body {
     border-radius: 4px;
 }
 
-.customers_list li a:hover
+.customers_list li a:hover,
 .customers_list li a:focus {
     border: 1px solid var(--pressed_color);
     fill: var(--pressed_color);
@@ -515,11 +516,8 @@ body {
     align-items: center;
     background-color: #FFFFFF1A;
     
-    max-width: 40px;
-    min-width: 40px;
-    max-height: 40px;
-    min-height: 40px;
-    padding: 4px;
+    width: 40px;
+    height: 40px;
     border-radius: 9999px;
 }
 .dark_social_media_lnk li a:hover,
